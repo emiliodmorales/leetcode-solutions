@@ -36,4 +36,13 @@ function Shape(a, b, c, d) {
 }
 
 // ----------------------------------------------------
+
+/**
+ * TODO
+ */
+function largestSquareArea(bottomLeft, topRight) {
+  // TODO
+}
+
+// ----------------------------------------------------
 // @lc code=end
