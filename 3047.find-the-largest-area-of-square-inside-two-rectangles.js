@@ -9,7 +9,7 @@
 /**
  * @param {number[][]} bottomLeft
  * @param {number[][]} topRight
- * @return {number}
+ * @returns {number} largest square intersection area between any two shapes
  */
 var largestSquareArea = function (bottomLeft, topRight) {};
 
@@ -21,7 +21,7 @@ var largestSquareArea = function (bottomLeft, topRight) {};
  * @param {number} left
  * @param {number} top
  * @param {number} right
- * @return {Shape} - a shape with the child function area()
+ * @returns {Shape} a shape with the child function area()
  */
 function Shape(a, b, c, d) {
   return {
@@ -38,7 +38,10 @@ function Shape(a, b, c, d) {
 // ----------------------------------------------------
 
 /**
- * TODO
+ * Measure the largest square intersection area between two shapes
+ * @param {Shape} shape1
+ * @param {Shape} shape2
+ * @returns area of the largest square in the intersection of shape1 and shape2
  */
 function measureSquareIntersectionArea(shape1, shape2) {
   const a_intersect = Math.max(shape1.a, shape2.a);
@@ -58,7 +61,9 @@ function measureSquareIntersectionArea(shape1, shape2) {
 // ----------------------------------------------------
 
 /**
- * TODO
+ * Finds the largest square within a shape
+ * @param {Shape} shape
+ * @returns {Shape} largest square
  */
 function findLargestSquare(shape) {
   const squareSideLength = Math.min(shape.c - shape.a, shape.d - shape.b);
