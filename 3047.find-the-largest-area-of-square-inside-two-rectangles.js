@@ -40,15 +40,6 @@ function Shape(a, b, c, d) {
 /**
  * TODO
  */
-function largestSquareArea(bottomLeft, topRight) {
-  // TODO
-}
-
-// ----------------------------------------------------
-
-/**
- * TODO
- */
 function measureSquareIntersectionArea(shape1, shape2) {
   const a_intersect = Math.max(shape1.a, shape2.a);
   const b_intersect = Math.max(shape1.b, shape2.b);
