@@ -77,3 +77,10 @@ function findLargestSquare(shape) {
 
 // ----------------------------------------------------
 // @lc code=end
+
+module.exports = {
+  largestSquareArea,
+  Shape,
+  measureSquareIntersectionArea,
+  findLargestSquare,
+};
