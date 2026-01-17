@@ -11,7 +11,9 @@
  * @param {number[][]} topRight
  * @returns {number} largest square intersection area between any two shapes
  */
-var largestSquareArea = function (bottomLeft, topRight) {};
+var largestSquareArea = function (bottomLeft, topRight) {
+  // TODO: test every permutation of two shapes
+};
 
 // ----------------------------------------------------
 
