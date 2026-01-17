@@ -30,6 +30,8 @@ function Shape(a, b, c, d) {
     c: c,
     d: d,
     area: function () {
+      if (this.a >= this.c) return 0;
+      if (this.b >= this.d) return 0;
       return (this.c - this.a) * (this.d - this.b);
     },
   };
