@@ -65,4 +65,19 @@ function measureSquareIntersectionArea(shape1, shape2) {
 }
 
 // ----------------------------------------------------
+
+/**
+ * TODO
+ */
+function findLargestSquare(shape) {
+  const squareSideLength = Math.min(shape.c - shape.a, shape.d - shape.b);
+  return Shape(
+    shape.a,
+    shape.b,
+    shape.a + squareSideLength,
+    shape.b + squareSideLength,
+  );
+}
+
+// ----------------------------------------------------
 // @lc code=end
