@@ -45,4 +45,24 @@ function largestSquareArea(bottomLeft, topRight) {
 }
 
 // ----------------------------------------------------
+
+/**
+ * TODO
+ */
+function measureSquareIntersectionArea(shape1, shape2) {
+  const a_intersect = Math.max(shape1.a, shape2.a);
+  const b_intersect = Math.max(shape1.b, shape2.b);
+  const c_intersect = Math.min(shape1.c, shape2.c);
+  const d_intersect = Math.min(shape1.d, shape2.d);
+
+  const intersection = Shape(
+    a_intersect,
+    b_intersect,
+    c_intersect,
+    d_intersect,
+  );
+  return findLargestSquare(intersection).area();
+}
+
+// ----------------------------------------------------
 // @lc code=end
